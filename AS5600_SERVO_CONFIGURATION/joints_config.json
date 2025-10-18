@@ -1,0 +1,102 @@
+{
+  "angle_register": "ANGLE",
+  "warn_abs_deg": 170.0,
+  "joints": [
+    {
+      "name": "joint0",
+      "channel": 0,
+      "zero_offset": 81.826171875,
+      "invert": false,
+      "servo": {
+        "esp32_addr": 8,
+        "channel": 0,
+        "center_deg": 90.0,
+        "servo_deg_per_joint_deg": 1.0,
+        "min_servo_deg": 0.0,
+        "max_servo_deg": 180.0,
+        "min_deg": -90.0,
+        "max_deg": 90.0
+      }
+    },
+    {
+      "name": "joint1",
+      "channel": 1,
+      "zero_offset": 164.443359375,
+      "invert": false,
+      "servo": {
+        "esp32_addr": 8,
+        "channel": 1,
+        "center_deg": 90.0,
+        "servo_deg_per_joint_deg": 1.0,
+        "min_servo_deg": 0.0,
+        "max_servo_deg": 180.0,
+        "min_deg": -90.0,
+        "max_deg": 90.0
+      }
+    },
+    {
+      "name": "joint2",
+      "channel": 2,
+      "zero_offset": 0.0,
+      "invert": false,
+      "servo": {
+        "esp32_addr": 8,
+        "channel": 2,
+        "center_deg": 90.0,
+        "servo_deg_per_joint_deg": 1.0,
+        "min_servo_deg": 0.0,
+        "max_servo_deg": 180.0,
+        "min_deg": -90.0,
+        "max_deg": 90.0
+      }
+    },
+    {
+      "name": "joint3",
+      "channel": 3,
+      "zero_offset": 0.0,
+      "invert": false,
+      "servo": {
+        "esp32_addr": 8,
+        "channel": 3,
+        "center_deg": 90.0,
+        "servo_deg_per_joint_deg": 1.0,
+        "min_servo_deg": 0.0,
+        "max_servo_deg": 180.0,
+        "min_deg": -90.0,
+        "max_deg": 90.0
+      }
+    },
+    {
+      "name": "joint4",
+      "channel": 4,
+      "zero_offset": 0.0,
+      "invert": false,
+      "servo": {
+        "esp32_addr": 8,
+        "channel": 4,
+        "center_deg": 90.0,
+        "servo_deg_per_joint_deg": 1.0,
+        "min_servo_deg": 0.0,
+        "max_servo_deg": 180.0,
+        "min_deg": -90.0,
+        "max_deg": 90.0
+      }
+    },
+    {
+      "name": "joint5",
+      "channel": 5,
+      "zero_offset": 0.0,
+      "invert": false,
+      "servo": {
+        "esp32_addr": 8,
+        "channel": 5,
+        "center_deg": 90.0,
+        "servo_deg_per_joint_deg": 1.0,
+        "min_servo_deg": 0.0,
+        "max_servo_deg": 180.0,
+        "min_deg": -90.0,
+        "max_deg": 90.0
+      }
+    }
+  ]
+}
