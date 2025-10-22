@@ -1,0 +1,6 @@
+Invoking command in '/home/pi/ers6_ws/build/control': /usr/bin/cmake /home/pi/ers6_ws/src/control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install/control
+Invoked command in '/home/pi/ers6_ws/build/control' returned '0': /usr/bin/cmake /home/pi/ers6_ws/src/control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install/control
+Invoking command in '/home/pi/ers6_ws/build/control': /usr/bin/cmake --build /home/pi/ers6_ws/build/control -- -j4 -l4
+Invoked command in '/home/pi/ers6_ws/build/control' returned '0': /usr/bin/cmake --build /home/pi/ers6_ws/build/control -- -j4 -l4
+Invoking command in '/home/pi/ers6_ws/build/control': /usr/bin/cmake --install /home/pi/ers6_ws/build/control
+Invoked command in '/home/pi/ers6_ws/build/control' returned '0': /usr/bin/cmake --install /home/pi/ers6_ws/build/control

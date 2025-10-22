@@ -1,0 +1,22 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    ers6_arm_controller:
+      type: forward_command_controller/ForwardCommandController
+
+# >>> Controller-specific parameters live under a top-level key
+#     that matches the controller's name.
+ers6_arm_controller:
+  ros__parameters:
+    joints:
+      - base_link_to_a5
+      - a5_to_a4
+      - a4_to_a3
+      - a3_to_a2
+      - a2_to_a1
+      - a1_to_a0
+    interface_name: position
