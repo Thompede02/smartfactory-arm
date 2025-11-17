@@ -1,0 +1,52 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 25
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    position_controller:
+      type: position_controllers/JointGroupPositionController
+
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - base_link_to_a5
+      - a5_to_a4
+      - a4_to_a3
+      - a3_to_a2
+      - a2_to_a1
+      - a1_to_a0
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    interpolate_from_desired_state: true
+
+    constraints:
+      stopped_velocity_tolerance: 0.01
+      goal_time: 0.0
+      base_link_to_a5:
+        #trajectory: 0.1
+        goal: 0.03
+      a5_to_a4:
+        #trajectory: 0.1
+        goal: 0.03
+
+position_controller:
+  ros__parameters:
+    joints:
+      - base_link_to_a5
+      - a5_to_a4
+      - a4_to_a3
+      - a3_to_a2
+      - a2_to_a1
+      - a1_to_a0

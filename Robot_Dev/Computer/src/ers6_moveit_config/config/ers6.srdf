@@ -1,0 +1,43 @@
+<robot name="ers6">
+  <!-- world↔base -->
+  <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+
+  <!-- planning group -->
+  <group name="manipulator">
+    <chain base_link="base_link" tip_link="a0"/>
+  </group>
+
+  <!-- your existing zero pose -->
+  <group_state name="home" group="manipulator">
+    <joint name="base_link_to_a5" value="0"/>
+    <joint name="a5_to_a4" value="0"/>
+    <joint name="a4_to_a3" value="0"/>
+    <joint name="a3_to_a2" value="0"/>
+    <joint name="a2_to_a1" value="0"/>
+    <joint name="a1_to_a0" value="0"/>
+  </group_state>
+
+  <!-- a gentle, likely non-colliding pose (tweak as you like) -->
+  <group_state name="ready" group="manipulator">
+    <joint name="base_link_to_a5" value="0.4"/>
+    <joint name="a5_to_a4" value="-0.6"/>
+    <joint name="a4_to_a3" value="0.5"/>
+    <joint name="a3_to_a2" value="0.3"/>
+    <joint name="a2_to_a1" value="0.0"/>
+    <joint name="a1_to_a0" value="0.0"/>
+  </group_state>
+
+  <!-- allow contacts at joints (standard in MoveIt SRDFs) -->
+  <disable_collisions link1="base_link" link2="a5" reason="Adjacent"/>
+  <disable_collisions link1="a5"        link2="a4" reason="Adjacent"/>
+  <disable_collisions link1="a4"        link2="a3" reason="Adjacent"/>
+  <disable_collisions link1="a3"        link2="a2" reason="Adjacent"/>
+  <disable_collisions link1="a2"        link2="a1" reason="Adjacent"/>
+  <disable_collisions link1="a1"        link2="a0" reason="Adjacent"/>
+
+  <!-- (optional) if your meshes are bulky, these can help reduce false positives -->
+  <!--
+  <disable_collisions link1="base_link" link2="a4" reason="Proximity"/>
+  <disable_collisions link1="a5"        link2="a3" reason="Proximity"/>
+  -->
+</robot>

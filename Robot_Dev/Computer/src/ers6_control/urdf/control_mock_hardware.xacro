@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot name="ers6" xmlns:xacro="http://ros.org/wiki/xacro">
+    
+    <ros2_control name="MockHardwareSystem" type="system">
+        <hardware>
+            <plugin>mock_components/GenericSystem</plugin>
+            <param name="calculate_dynamics">false</param>
+            <param name="custom_interface_with_following_offset"></param>
+            <param name="disable_commands">false</param>
+            <param name="mock_gpio_commands">false</param>
+            <param name="mock_sensor_commands">false</param>
+            <param name="position_state_following_offset">0.0</param>
+        </hardware>
+
+        <joint name="base_link_to_a5">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a5_to_a4">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a4_to_a3">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a3_to_a2">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a2_to_a1">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a1_to_a0">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+
+        <gpio name="flange_vacuum">
+            <command_interface name="vacuum"/>
+            <state_interface name="vacuum" data_type="double"/>
+        </gpio>
+
+    </ros2_control>
+</robot>

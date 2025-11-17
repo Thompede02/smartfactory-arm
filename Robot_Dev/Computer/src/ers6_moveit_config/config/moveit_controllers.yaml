@@ -1,0 +1,18 @@
+move_group:
+  ros__parameters:
+    moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+    moveit_simple_controller_manager:
+      controller_names: [ers6_trajectory_controller]
+
+      ers6_trajectory_controller:
+        type: FollowJointTrajectory
+        action_ns: follow_joint_trajectory
+        default: true
+        joints:
+          - base_link_to_a5
+          - a5_to_a4
+          - a4_to_a3
+          - a3_to_a2
+          - a2_to_a1
+          - a1_to_a0

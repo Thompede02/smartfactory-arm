@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot name="ers6" xmlns:xacro="http://ros.org/wiki/xacro">
+    
+    <ros2_control name="HardwareSystem" type="system">
+        <hardware>
+            <plugin>ros2_control_ers6/RobotSystemHardware</plugin>
+            <param name="a1_to_a0_name">a1_to_a0</param>
+            <param name="a2_to_a1_name">a2_to_a1</param>
+            <param name="a3_to_a2_name">a3_to_a2</param>
+            <param name="a4_to_a3_name">a4_to_a3</param>
+            <param name="a5_to_a4_name">a5_to_a4</param>
+            <param name="base_link_to_a5_name">base_link_to_a5</param>
+            <param name="enc_counts_per_rev">4096</param>
+        </hardware>
+
+        <joint name="base_link_to_a5">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a5_to_a4">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a4_to_a3">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a3_to_a2">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a2_to_a1">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="a1_to_a0">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+    </ros2_control>
+</robot>

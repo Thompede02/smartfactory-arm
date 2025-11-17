@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="ers6_ros2_control" params="name initial_positions_file">
+    <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
+
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <!-- Use the standard fake system for simulation -->
+        <plugin>fake_components/GenericSystem</plugin>
+      </hardware>
+
+      <!-- Repeat this joint block for all 6 joints -->
+      <joint name="base_link_to_a5">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position">
+            <param name="initial_value">${initial_positions['base_link_to_a5']}</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="a5_to_a4">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position">
+            <param name="initial_value">${initial_positions['a5_to_a4']}</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="a4_to_a3">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position">
+            <param name="initial_value">${initial_positions['a4_to_a3']}</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="a3_to_a2">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position">
+            <param name="initial_value">${initial_positions['a3_to_a2']}</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="a2_to_a1">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position">
+            <param name="initial_value">${initial_positions['a2_to_a1']}</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="a1_to_a0">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position">
+            <param name="initial_value">${initial_positions['a1_to_a0']}</param>
+          </state_interface>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+    </ros2_control>
+  </xacro:macro>
+</robot>

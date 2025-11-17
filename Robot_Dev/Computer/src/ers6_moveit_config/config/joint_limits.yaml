@@ -1,0 +1,57 @@
+move_group:
+  ros__parameters:
+    robot_description_planning:
+      joint_limits:
+        base_link_to_a5:
+          has_position_limits: true
+          min_position: -1.5708    # -90°
+          max_position:  1.5708    #  90°
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        a5_to_a4:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position:  1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        a4_to_a3:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position:  1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        a3_to_a2:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position:  1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        a2_to_a1:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position:  1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        a1_to_a0:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position:  1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0

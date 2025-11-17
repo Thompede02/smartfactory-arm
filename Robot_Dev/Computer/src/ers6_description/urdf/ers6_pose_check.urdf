@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<robot name="ers6_pose_check">
+
+  <!-- Keep model centered -->
+  <link name="world"/>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>P
+
+  <!-- ====================== base_link ====================== -->
+  <link name="base_link">
+    <!-- Raw STL pose: start with rpy="0 0 0". Tweak here if Base.stl is rotated in your CAD export. -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/Base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="base"><color rgba="0.5 0.5 0.5 1"/></material>
+    </visual>
+
+    <!-- Pose axes (helpers): cylinders 5cm long, 2mm radius -->
+    <!-- Z axis (blue), cylinders are Z-aligned by default -->
+    <visual>
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry><cylinder radius="0.002" length="0.05"/></geometry>
+      <material name="z_axis"><color rgba="0.2 0.2 1 1"/></material>
+    </visual>
+    <!-- X axis (red): rotate +90 deg about Y to align cylinder with X -->
+    <visual>
+      <origin xyz="0.025 0 0" rpy="0 1.57079632679 0"/>
+      <geometry><cylinder radius="0.002" length="0.05"/></geometry>
+      <material name="x_axis"><color rgba="1 0.2 0.2 1"/></material>
+    </visual>
+    <!-- Y axis (green): rotate -90 deg about X to align with Y -->
+    <visual>
+      <origin xyz="0 0.025 0" rpy="-1.57079632679 0 0"/>
+      <geometry><cylinder radius="0.002" length="0.05"/></geometry>
+      <material name="y_axis"><color rgba="0.2 1 0.2 1"/></material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="../meshes/Base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ====================== joints & links ====================== -->
+  <joint name="base_link_to_a5" type="revolute">
+    <parent link="base_link"/>
+    <child link="a5"/>
+    <!-- Keep small spacing so parts don't z-fight; adjust xyz to your true DH later -->
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" lower="-3.1416" upper="3.1416" velocity="1.0"/>
+  </joint>
+
+  <link name="a5">
+    <visual>
+      <!-- Start with raw STL pose; tweak rpy here to “fix” a5.stl orientation -->
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a5.stl" scale="0.001 0.001 0.001"/></geometry>
+      <material name="a5"><color rgba="0.8 0.6 1 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a5.stl" scale="0.001 0.001 0.001"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="a5_to_a4" type="revolute">
+    <parent link="a5"/>
+    <child link="a4"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" lower="-3.1416" upper="3.1416" velocity="1.0"/>
+  </joint>
+
+  <link name="a4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a4.stl" scale="0.001 0.001 0.001"/></geometry>
+      <material name="a4"><color rgba="0.5 0.9 0.3 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a4.stl" scale="0.001 0.001 0.001"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="a4_to_a3" type="revolute">
+    <parent link="a4"/>
+    <child link="a3"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="1000" lower="-3.1416" upper="3.1416" velocity="1.0"/>
+  </joint>
+
+  <link name="a3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a3.stl" scale="0.001 0.001 0.001"/></geometry>
+      <material name="a3"><color rgba="0.9 0.2 0.2 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a3.stl" scale="0.001 0.001 0.001"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="a3_to_a2" type="revolute">
+    <parent link="a3"/>
+    <child link="a2"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" lower="-3.1416" upper="3.1416" velocity="1.0"/>
+  </joint>
+
+  <link name="a2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a2.stl" scale="0.001 0.001 0.001"/></geometry>
+      <material name="a2"><color rgba="0.7 0.75 0.95 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a2.stl" scale="0.001 0.001 0.001"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="a2_to_a1" type="revolute">
+    <parent link="a2"/>
+    <child link="a1"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1000" lower="-3.1416" upper="3.1416" velocity="1.0"/>
+  </joint>
+
+  <link name="a1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a1.stl" scale="0.001 0.001 0.001"/></geometry>
+      <material name="a1"><color rgba="0.3 0.7 0.1 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a1.stl" scale="0.001 0.001 0.001"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="a1_to_a0" type="revolute">
+    <parent link="a1"/>
+    <child link="a0"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" lower="-3.1416" upper="3.1416" velocity="1.0"/>
+  </joint>
+
+  <link name="a0">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a0.stl" scale="0.001 0.001 0.001"/></geometry>
+      <material name="a0"><color rgba="0.5 0.1 0.6 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="../meshes/a0.stl" scale="0.001 0.001 0.001"/></geometry>
+    </collision>
+  </link>
+
+  <!-- ====================== ros2_control (kept; ignored by VS Code) ====================== -->
+  <ros2_control name="ERS6System" type="system">
+    <hardware><plugin>ros2_control_ers6/RobotSystemHardware</plugin></hardware>
+    <joint name="base_link_to_a5"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+    <joint name="a5_to_a4"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+    <joint name="a4_to_a3"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+    <joint name="a3_to_a2"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+    <joint name="a2_to_a1"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+    <joint name="a1_to_a0"><command_interface name="position"/><state_interface name="position"/><state_interface name="velocity"/></joint>
+  </ros2_control>
+
+</robot>
