@@ -1,9 +1,0 @@
-ros__parameters:
-  joints:
-    - base_link_to_a5
-    - a5_to_a4
-    - a4_to_a3
-    - a3_to_a2
-    - a2_to_a1
-    - a1_to_a0
-  interface_name: position
