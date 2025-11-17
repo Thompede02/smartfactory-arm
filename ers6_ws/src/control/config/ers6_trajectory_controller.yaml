@@ -1,0 +1,40 @@
+ers6_trajectory_controller:
+  ros__parameters:
+    joints:
+      - base_link_to_a5
+      - a5_to_a4
+      - a4_to_a3
+      - a3_to_a2
+      - a2_to_a1
+      - a1_to_a0
+
+    command_interfaces: [position]
+    state_interfaces:   [position, velocity]
+
+    interpolation_method: splines
+    allow_partial_joints_goal: false
+
+    constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.05
+      base_link_to_a5:
+        trajectory: 0.5
+        goal: 0.1
+      a5_to_a4:
+        trajectory: 0.5
+        goal: 0.1
+      a4_to_a3:
+        trajectory: 0.5
+        goal: 0.1
+      a3_to_a2:
+        trajectory: 0.5
+        goal: 0.1
+      a2_to_a1:
+        trajectory: 0.5
+        goal: 0.1
+      a1_to_a0:
+        trajectory: 0.5
+        goal: 0.1
+
+    state_publish_rate: 25.0
+    action_monitor_rate: 10.0

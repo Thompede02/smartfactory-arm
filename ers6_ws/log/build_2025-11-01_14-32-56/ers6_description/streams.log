@@ -1,0 +1,49 @@
+[0.172s] Invoking command in '/home/pi/ers6_ws/build/ers6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ers6_ws/src/ers6_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install
+[0.989s] -- The C compiler identification is GNU 11.4.0
+[1.846s] -- The CXX compiler identification is GNU 11.4.0
+[1.976s] -- Detecting C compiler ABI info
+[3.050s] -- Detecting C compiler ABI info - done
+[3.152s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.157s] -- Detecting C compile features
+[3.161s] -- Detecting C compile features - done
+[3.203s] -- Detecting CXX compiler ABI info
+[4.478s] -- Detecting CXX compiler ABI info - done
+[4.631s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.646s] -- Detecting CXX compile features
+[4.647s] -- Detecting CXX compile features - done
+[4.736s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[7.052s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[8.170s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[10.070s] -- Configuring done
+[10.148s] -- Generating done
+[10.182s] -- Build files have been written to: /home/pi/ers6_ws/build/ers6_description
+[10.229s] Invoked command in '/home/pi/ers6_ws/build/ers6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ers6_ws/src/ers6_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install
+[10.234s] Invoking command in '/home/pi/ers6_ws/build/ers6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ers6_ws/build/ers6_description -- -j4 -l4
+[10.713s] Invoked command in '/home/pi/ers6_ws/build/ers6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ers6_ws/build/ers6_description -- -j4 -l4
+[10.879s] Invoking command in '/home/pi/ers6_ws/build/ers6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ers6_ws/build/ers6_description
+[11.039s] -- Install configuration: ""
+[11.048s] -- Execute custom install script
+[11.056s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/urdf/ers6.urdf
+[11.172s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/Base.stl
+[11.257s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/a0.stl
+[11.352s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/a1.stl
+[11.441s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/a2.stl
+[11.519s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/a3.stl
+[11.599s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/a4.stl
+[11.680s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/meshes/a5.stl
+[11.760s] -- Symlinking: /home/pi/ers6_ws/install/share/ament_index/resource_index/package_run_dependencies/ers6_description
+[11.839s] -- Symlinking: /home/pi/ers6_ws/install/share/ament_index/resource_index/parent_prefix_path/ers6_description
+[11.921s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/environment/ament_prefix_path.sh
+[12.007s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/environment/ament_prefix_path.dsv
+[12.108s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/environment/path.sh
+[12.219s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/environment/path.dsv
+[12.306s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/local_setup.bash
+[12.388s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/local_setup.sh
+[12.474s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/local_setup.zsh
+[12.577s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/local_setup.dsv
+[12.675s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/package.dsv
+[12.777s] -- Symlinking: /home/pi/ers6_ws/install/share/ament_index/resource_index/packages/ers6_description
+[12.894s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/cmake/ers6_descriptionConfig.cmake
+[12.978s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/cmake/ers6_descriptionConfig-version.cmake
+[13.081s] -- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/package.xml
+[13.188s] Invoked command in '/home/pi/ers6_ws/build/ers6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ers6_ws/build/ers6_description

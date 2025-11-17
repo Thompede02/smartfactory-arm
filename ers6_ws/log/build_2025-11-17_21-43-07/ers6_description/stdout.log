@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/urdf/ers6.urdf
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/Base.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a0.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a1.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a2.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a3.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a4.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a5.stl
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/package_run_dependencies/ers6_description
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/parent_prefix_path/ers6_description
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/path.sh
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/path.dsv
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.bash
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.sh
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.zsh
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.dsv
+-- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/package.dsv
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/packages/ers6_description
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/cmake/ers6_descriptionConfig.cmake
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/cmake/ers6_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/package.xml

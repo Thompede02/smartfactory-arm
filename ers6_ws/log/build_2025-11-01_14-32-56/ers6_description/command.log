@@ -1,0 +1,6 @@
+Invoking command in '/home/pi/ers6_ws/build/ers6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ers6_ws/src/ers6_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install
+Invoked command in '/home/pi/ers6_ws/build/ers6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/ers6_ws/src/ers6_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install
+Invoking command in '/home/pi/ers6_ws/build/ers6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ers6_ws/build/ers6_description -- -j4 -l4
+Invoked command in '/home/pi/ers6_ws/build/ers6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/ers6_ws/build/ers6_description -- -j4 -l4
+Invoking command in '/home/pi/ers6_ws/build/ers6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ers6_ws/build/ers6_description
+Invoked command in '/home/pi/ers6_ws/build/ers6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/ers6_ws/build/ers6_description
