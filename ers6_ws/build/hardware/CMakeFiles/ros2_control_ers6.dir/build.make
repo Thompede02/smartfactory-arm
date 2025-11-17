@@ -69,19 +69,19 @@ include CMakeFiles/ros2_control_ers6.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ros2_control_ers6.dir/flags.make
 
-CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o: CMakeFiles/ros2_control_ers6.dir/flags.make
-CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o: /home/pi/ers6_ws/src/hardware/src/actuator.cpp
-CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o: CMakeFiles/ros2_control_ers6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o -MF CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o.d -o CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o -c /home/pi/ers6_ws/src/hardware/src/actuator.cpp
+CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o: CMakeFiles/ros2_control_ers6.dir/flags.make
+CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o: /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp
+CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o: CMakeFiles/ros2_control_ers6.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o -MF CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o.d -o CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o -c /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp
 
-CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ers6_ws/src/hardware/src/actuator.cpp > CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.i
+CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp > CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.i
 
-CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/actuator.cpp -o CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s
+CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp -o CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s
 
 CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.o: CMakeFiles/ros2_control_ers6.dir/flags.make
 CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.o: /home/pi/ers6_ws/src/hardware/src/comms.cpp
@@ -97,33 +97,66 @@ CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/comms.cpp -o CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.s
 
-CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o: CMakeFiles/ros2_control_ers6.dir/flags.make
-CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o: /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp
-CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o: CMakeFiles/ros2_control_ers6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o -MF CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o.d -o CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o -c /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp
+CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o: CMakeFiles/ros2_control_ers6.dir/flags.make
+CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o: /home/pi/ers6_ws/src/hardware/src/actuator.cpp
+CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o: CMakeFiles/ros2_control_ers6.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o -MF CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o.d -o CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o -c /home/pi/ers6_ws/src/hardware/src/actuator.cpp
 
-CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp > CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.i
+CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ers6_ws/src/hardware/src/actuator.cpp > CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.i
 
-CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/ers6_system.cpp -o CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s
+CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/actuator.cpp -o CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s
+
+CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o: CMakeFiles/ros2_control_ers6.dir/flags.make
+CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o: /home/pi/ers6_ws/src/hardware/src/as5600_mux.cpp
+CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o: CMakeFiles/ros2_control_ers6.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o -MF CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o.d -o CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o -c /home/pi/ers6_ws/src/hardware/src/as5600_mux.cpp
+
+CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ers6_ws/src/hardware/src/as5600_mux.cpp > CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.i
+
+CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/as5600_mux.cpp -o CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.s
+
+CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o: CMakeFiles/ros2_control_ers6.dir/flags.make
+CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o: /home/pi/ers6_ws/src/hardware/src/pca9685_min.c
+CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o: CMakeFiles/ros2_control_ers6.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o -MF CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o.d -o CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o -c /home/pi/ers6_ws/src/hardware/src/pca9685_min.c
+
+CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/ers6_ws/src/hardware/src/pca9685_min.c > CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.i
+
+CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/ers6_ws/src/hardware/src/pca9685_min.c -o CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.s
 
 # Object files for target ros2_control_ers6
 ros2_control_ers6_OBJECTS = \
-"CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o" \
+"CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o" \
 "CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.o" \
-"CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o"
+"CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o" \
+"CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o" \
+"CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o"
 
 # External object files for target ros2_control_ers6
 ros2_control_ers6_EXTERNAL_OBJECTS =
 
-libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o
-libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.o
 libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o
+libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.o
+libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o
+libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o
+libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o
 libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/build.make
+libros2_control_ers6.so: /opt/ros/humble/lib/librclcpp_lifecycle.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libfake_components.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libmock_components.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libhardware_interface.so
@@ -235,7 +268,6 @@ libros2_control_ers6.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesuppo
 libros2_control_ers6.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_py.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librcpputils.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librcutils.so
-libros2_control_ers6.so: /usr/lib/aarch64-linux-gnu/libi2c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/liblibstatistics_collector.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -253,17 +285,47 @@ libros2_control_ers6.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupp
 libros2_control_ers6.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_yaml_param_parser.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libyaml.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librmw_implementation.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_logging_spdlog.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librcl_logging_interface.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libtracetools.so
+libros2_control_ers6.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libament_index_cpp.so
 libros2_control_ers6.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
 libros2_control_ers6.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libros2_control_ers6.so: /opt/ros/humble/lib/librmw.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
@@ -279,46 +341,16 @@ libros2_control_ers6.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_yaml_param_parser.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libyaml.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librmw_implementation.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libament_index_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_logging_spdlog.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librcl_logging_interface.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libtracetools.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
-libros2_control_ers6.so: /opt/ros/humble/lib/librmw.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-libros2_control_ers6.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
-libros2_control_ers6.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librcpputils.so
-libros2_control_ers6.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libros2_control_ers6.so: /opt/ros/humble/lib/librcutils.so
+libros2_control_ers6.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 libros2_control_ers6.so: CMakeFiles/ros2_control_ers6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libros2_control_ers6.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/ers6_ws/build/hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libros2_control_ers6.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ros2_control_ers6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

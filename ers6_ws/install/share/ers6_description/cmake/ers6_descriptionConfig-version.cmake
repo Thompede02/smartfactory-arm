@@ -1,0 +1,1 @@
+/home/pi/Rasp_Buckup/ers6_ws/build/ers6_description/ament_cmake_core/ers6_descriptionConfig-version.cmake

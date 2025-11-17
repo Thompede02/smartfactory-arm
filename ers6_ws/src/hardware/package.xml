@@ -2,17 +2,25 @@
 <package format="3">
   <name>hardware</name>
   <version>0.0.1</version>
-  <description>ERS6 ros2_control driver: PCA9685 servos + TCA9548A + AS5600 encoders</description>
-  <maintainer email="you@example.com">You</maintainer>
-  <license>Apache-2.0</license>
+  <description>ERS6 hardware interface: PCA9685 servos + optional AS5600 via TCA9548A</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rclcpp</depend>
-  <depend>hardware_interface</depend>
-  <depend>pluginlib</depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>rclcpp_lifecycle</build_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>pluginlib</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>rclcpp_lifecycle</exec_depend>
+  <exec_depend>hardware_interface</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
 
   <export>
-    <hardware_interface plugin="${prefix}/hardware/ers6_system_plugin.xml"/>
+    <build_type>ament_cmake</build_type>
+    <pluginlib plugin="${prefix}/ers6_system_plugin.xml"/>
   </export>
 </package>

@@ -234,6 +234,30 @@ src/actuator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.s
 .PHONY : src/actuator.cpp.s
 
+src/as5600_mux.o: src/as5600_mux.cpp.o
+.PHONY : src/as5600_mux.o
+
+# target to build an object file
+src/as5600_mux.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o
+.PHONY : src/as5600_mux.cpp.o
+
+src/as5600_mux.i: src/as5600_mux.cpp.i
+.PHONY : src/as5600_mux.i
+
+# target to preprocess a source file
+src/as5600_mux.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.i
+.PHONY : src/as5600_mux.cpp.i
+
+src/as5600_mux.s: src/as5600_mux.cpp.s
+.PHONY : src/as5600_mux.s
+
+# target to generate assembly for a file
+src/as5600_mux.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.s
+.PHONY : src/as5600_mux.cpp.s
+
 src/comms.o: src/comms.cpp.o
 .PHONY : src/comms.o
 
@@ -282,6 +306,30 @@ src/ers6_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.s
 .PHONY : src/ers6_system.cpp.s
 
+src/pca9685_min.o: src/pca9685_min.c.o
+.PHONY : src/pca9685_min.o
+
+# target to build an object file
+src/pca9685_min.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o
+.PHONY : src/pca9685_min.c.o
+
+src/pca9685_min.i: src/pca9685_min.c.i
+.PHONY : src/pca9685_min.i
+
+# target to preprocess a source file
+src/pca9685_min.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.i
+.PHONY : src/pca9685_min.c.i
+
+src/pca9685_min.s: src/pca9685_min.c.s
+.PHONY : src/pca9685_min.s
+
+# target to generate assembly for a file
+src/pca9685_min.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_control_ers6.dir/build.make CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.s
+.PHONY : src/pca9685_min.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -301,12 +349,18 @@ help:
 	@echo "... src/actuator.o"
 	@echo "... src/actuator.i"
 	@echo "... src/actuator.s"
+	@echo "... src/as5600_mux.o"
+	@echo "... src/as5600_mux.i"
+	@echo "... src/as5600_mux.s"
 	@echo "... src/comms.o"
 	@echo "... src/comms.i"
 	@echo "... src/comms.s"
 	@echo "... src/ers6_system.o"
 	@echo "... src/ers6_system.i"
 	@echo "... src/ers6_system.s"
+	@echo "... src/pca9685_min.o"
+	@echo "... src/pca9685_min.i"
+	@echo "... src/pca9685_min.s"
 .PHONY : help
 
 

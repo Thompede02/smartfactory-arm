@@ -1,7 +1,9 @@
+<?xml version="1.0"?>
 <library path="ros2_control_ers6">
-  <class name="ros2_control_ers6/RobotSystemHardware"
-         type="ros2_control_ers6::RobotSystemHardware"
-         base_class_type="hardware_interface::SystemInterface">
-    <description>ERS6 hardware: PCA9685 + AS5600 via TCA9548A</description>
+  <class
+      name="ros2_control_ers6/RobotSystemHardware"
+      type="ros2_control_ers6::RobotSystemHardware"
+      base_class_type="hardware_interface::SystemInterface">
+    <description>ERS6 6R robot hardware plugin (PCA9685; AS5600 optional)</description>
   </class>
 </library>

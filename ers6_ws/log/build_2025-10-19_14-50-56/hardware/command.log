@@ -1,6 +1,0 @@
-Invoking command in '/home/pi/ers6_ws/build/hardware': /usr/bin/cmake /home/pi/ers6_ws/src/hardware -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install/hardware
-Invoked command in '/home/pi/ers6_ws/build/hardware' returned '0': /usr/bin/cmake /home/pi/ers6_ws/src/hardware -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install/hardware
-Invoking command in '/home/pi/ers6_ws/build/hardware': /usr/bin/cmake --build /home/pi/ers6_ws/build/hardware -- -j4 -l4
-Invoked command in '/home/pi/ers6_ws/build/hardware' returned '0': /usr/bin/cmake --build /home/pi/ers6_ws/build/hardware -- -j4 -l4
-Invoking command in '/home/pi/ers6_ws/build/hardware': /usr/bin/cmake --install /home/pi/ers6_ws/build/hardware
-Invoked command in '/home/pi/ers6_ws/build/hardware' returned '0': /usr/bin/cmake --install /home/pi/ers6_ws/build/hardware

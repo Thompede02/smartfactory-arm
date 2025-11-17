@@ -1,0 +1,568 @@
+[0.000000] (-) TimerEvent: {}
+[0.002096] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict()}
+[0.002816] (ers6_description) JobQueued: {'identifier': 'ers6_description', 'dependencies': OrderedDict()}
+[0.003390] (hardware) JobQueued: {'identifier': 'hardware', 'dependencies': OrderedDict()}
+[0.003676] (control) JobStarted: {'identifier': 'control'}
+[0.093994] (-) TimerEvent: {}
+[0.096710] (ers6_description) JobStarted: {'identifier': 'ers6_description'}
+[0.156549] (hardware) JobStarted: {'identifier': 'hardware'}
+[0.194270] (-) TimerEvent: {}
+[0.226835] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.236166] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.243732] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/ers6_ws/build/control', '--', '-j4', '-l4'], 'cwd': '/home/pi/ers6_ws/build/control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '10.0.0.6 53768 22'), ('ROS_PACKAGE_PATH', '/home/pi/ers6_sandbox_ws/install/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/ers6_sandbox_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.106.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e33934c2-d173-4515-ab07-463b58f5709f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ers6_sandbox_ws/install/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ers6_sandbox_ws/install/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-1c4d3877bf4fe64f.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/pi/.vscode-server/data/User/workspaceStorage/28e4a5e175b0e1e241b463800a3e991e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-eee39d4134.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/ers6_ws/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.6 53768 10.0.0.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install')]), 'shell': False}
+[0.284976] (ers6_description) JobProgress: {'identifier': 'ers6_description', 'progress': 'cmake'}
+[0.294539] (ers6_description) JobProgress: {'identifier': 'ers6_description', 'progress': 'build'}
+[0.294983] (-) TimerEvent: {}
+[0.298725] (ers6_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/ers6_ws/build/ers6_description', '--', '-j4', '-l4'], 'cwd': '/home/pi/ers6_ws/build/ers6_description', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '10.0.0.6 53768 22'), ('ROS_PACKAGE_PATH', '/home/pi/ers6_sandbox_ws/install/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/ers6_sandbox_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.106.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e33934c2-d173-4515-ab07-463b58f5709f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ers6_sandbox_ws/install/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ers6_sandbox_ws/install/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-1c4d3877bf4fe64f.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/pi/.vscode-server/data/User/workspaceStorage/28e4a5e175b0e1e241b463800a3e991e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-eee39d4134.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/ers6_ws/build/ers6_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.6 53768 10.0.0.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/pi/ers6_sandbox_ws/install')]), 'shell': False}
+[0.347471] (hardware) JobProgress: {'identifier': 'hardware', 'progress': 'cmake'}
+[0.358860] (hardware) JobProgress: {'identifier': 'hardware', 'progress': 'build'}
+[0.363210] (hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/ers6_ws/build/hardware', '--', '-j4', '-l4'], 'cwd': '/home/pi/ers6_ws/build/hardware', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '10.0.0.6 53768 22'), ('ROS_PACKAGE_PATH', '/home/pi/ers6_sandbox_ws/install/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/ers6_sandbox_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.106.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e33934c2-d173-4515-ab07-463b58f5709f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ers6_sandbox_ws/install/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ers6_sandbox_ws/install/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-1c4d3877bf4fe64f.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/pi/.vscode-server/data/User/workspaceStorage/28e4a5e175b0e1e241b463800a3e991e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-eee39d4134.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/ers6_ws/build/hardware'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.6 53768 10.0.0.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/pi/ers6_sandbox_ws/install')]), 'shell': False}
+[0.395320] (-) TimerEvent: {}
+[0.497963] (-) TimerEvent: {}
+[0.600713] (-) TimerEvent: {}
+[0.706968] (-) TimerEvent: {}
+[0.811960] (-) TimerEvent: {}
+[0.837593] (hardware) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.906244] (ers6_description) CommandEnded: {'returncode': 0}
+[0.913074] (-) TimerEvent: {}
+[0.962324] (ers6_description) JobProgress: {'identifier': 'ers6_description', 'progress': 'install'}
+[1.013141] (-) TimerEvent: {}
+[1.051322] (ers6_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/ers6_ws/build/ers6_description'], 'cwd': '/home/pi/ers6_ws/build/ers6_description', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '10.0.0.6 53768 22'), ('ROS_PACKAGE_PATH', '/home/pi/ers6_sandbox_ws/install/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/ers6_sandbox_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.106.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e33934c2-d173-4515-ab07-463b58f5709f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ers6_sandbox_ws/install/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ers6_sandbox_ws/install/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-1c4d3877bf4fe64f.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/pi/.vscode-server/data/User/workspaceStorage/28e4a5e175b0e1e241b463800a3e991e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-eee39d4134.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/ers6_ws/build/ers6_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.6 53768 10.0.0.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/pi/ers6_sandbox_ws/install')]), 'shell': False}
+[1.106862] (control) CommandEnded: {'returncode': 0}
+[1.114588] (-) TimerEvent: {}
+[1.122978] (control) JobProgress: {'identifier': 'control', 'progress': 'install'}
+[1.126989] (control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/ers6_ws/build/control'], 'cwd': '/home/pi/ers6_ws/build/control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '10.0.0.6 53768 22'), ('ROS_PACKAGE_PATH', '/home/pi/ers6_sandbox_ws/install/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/ers6_sandbox_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.106.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e33934c2-d173-4515-ab07-463b58f5709f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ers6_sandbox_ws/install/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ers6_sandbox_ws/install/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-1c4d3877bf4fe64f.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/pi/.vscode-server/data/User/workspaceStorage/28e4a5e175b0e1e241b463800a3e991e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-eee39d4134.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/ers6_ws/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.6 53768 10.0.0.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install')]), 'shell': False}
+[1.168319] (ers6_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.173353] (ers6_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.177896] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/urdf/ers6.urdf\n'}
+[1.180225] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/Base.stl\n'}
+[1.182701] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a0.stl\n'}
+[1.184514] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a1.stl\n'}
+[1.193015] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a2.stl\n'}
+[1.194412] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a3.stl\n'}
+[1.195623] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a4.stl\n'}
+[1.200107] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/meshes/a5.stl\n'}
+[1.205634] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/package_run_dependencies/ers6_description\n'}
+[1.206849] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/parent_prefix_path/ers6_description\n'}
+[1.210558] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/ament_prefix_path.sh\n'}
+[1.213561] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/ament_prefix_path.dsv\n'}
+[1.226630] (-) TimerEvent: {}
+[1.233429] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/path.sh\n'}
+[1.234685] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/environment/path.dsv\n'}
+[1.235674] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.bash\n'}
+[1.236625] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.sh\n'}
+[1.249941] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.zsh\n'}
+[1.251158] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/local_setup.dsv\n'}
+[1.252112] (ers6_description) StdoutLine: {'line': b'-- Symlinking: /home/pi/ers6_ws/install/share/ers6_description/package.dsv\n'}
+[1.326956] (-) TimerEvent: {}
+[1.332208] (control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.337875] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/config\n'}
+[1.340263] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/packages/ers6_description\n'}
+[1.344908] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/config/ers6_controller.yaml\n'}
+[1.346174] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/cmake/ers6_descriptionConfig.cmake\n'}
+[1.348114] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/cmake/ers6_descriptionConfig-version.cmake\n'}
+[1.354662] (ers6_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ers6_description/package.xml\n'}
+[1.356903] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/config/ers6_arm_controller.params.yaml\n'}
+[1.361130] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/config/ers6_trajectory_controller.yaml\n'}
+[1.362476] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/control\n'}
+[1.378758] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/control/control.launch.py\n'}
+[1.383255] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/ament_index/resource_index/package_run_dependencies/control\n'}
+[1.387334] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/ament_index/resource_index/parent_prefix_path/control\n'}
+[1.390826] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/environment/ament_prefix_path.sh\n'}
+[1.395651] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/environment/ament_prefix_path.dsv\n'}
+[1.406886] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/environment/path.sh\n'}
+[1.407887] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/environment/path.dsv\n'}
+[1.409081] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/local_setup.bash\n'}
+[1.410435] (ers6_description) CommandEnded: {'returncode': 0}
+[1.413307] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/local_setup.sh\n'}
+[1.414617] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/local_setup.zsh\n'}
+[1.416053] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/local_setup.dsv\n'}
+[1.427435] (-) TimerEvent: {}
+[1.440436] (control) StdoutLine: {'line': b'-- Installing: /home/pi/ers6_ws/install/share/control/package.dsv\n'}
+[1.444515] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/ament_index/resource_index/packages/control\n'}
+[1.447182] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/cmake/controlConfig.cmake\n'}
+[1.449376] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/cmake/controlConfig-version.cmake\n'}
+[1.451001] (control) StdoutLine: {'line': b'-- Up-to-date: /home/pi/ers6_ws/install/share/control/package.xml\n'}
+[1.528679] (-) TimerEvent: {}
+[1.631145] (-) TimerEvent: {}
+[1.718275] (ers6_description) JobEnded: {'identifier': 'ers6_description', 'rc': 0}
+[1.734882] (-) TimerEvent: {}
+[1.737299] (control) CommandEnded: {'returncode': 0}
+[1.835230] (-) TimerEvent: {}
+[1.939974] (-) TimerEvent: {}
+[1.973220] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[2.040330] (-) TimerEvent: {}
+[2.141734] (-) TimerEvent: {}
+[2.243002] (-) TimerEvent: {}
+[2.344318] (-) TimerEvent: {}
+[2.446652] (-) TimerEvent: {}
+[2.548655] (-) TimerEvent: {}
+[2.641280] (hardware) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.648930] (-) TimerEvent: {}
+[2.750506] (-) TimerEvent: {}
+[2.803252] (hardware) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.850827] (-) TimerEvent: {}
+[2.952268] (-) TimerEvent: {}
+[3.053799] (-) TimerEvent: {}
+[3.155233] (-) TimerEvent: {}
+[3.256858] (-) TimerEvent: {}
+[3.358395] (-) TimerEvent: {}
+[3.461956] (-) TimerEvent: {}
+[3.497869] (hardware) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.546218] (hardware) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.562300] (-) TimerEvent: {}
+[3.645903] (hardware) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.662591] (-) TimerEvent: {}
+[3.764031] (-) TimerEvent: {}
+[3.794998] (hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.864389] (-) TimerEvent: {}
+[3.965892] (-) TimerEvent: {}
+[3.975533] (hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.066202] (-) TimerEvent: {}
+[4.168638] (-) TimerEvent: {}
+[4.270250] (-) TimerEvent: {}
+[4.371604] (-) TimerEvent: {}
+[4.455349] (hardware) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.471916] (-) TimerEvent: {}
+[4.479555] (hardware) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.572387] (-) TimerEvent: {}
+[4.674977] (-) TimerEvent: {}
+[4.776311] (-) TimerEvent: {}
+[4.877725] (-) TimerEvent: {}
+[4.979007] (-) TimerEvent: {}
+[5.081273] (-) TimerEvent: {}
+[5.183304] (-) TimerEvent: {}
+[5.286034] (-) TimerEvent: {}
+[5.389948] (-) TimerEvent: {}
+[5.494170] (-) TimerEvent: {}
+[5.595614] (-) TimerEvent: {}
+[5.697235] (-) TimerEvent: {}
+[5.799209] (-) TimerEvent: {}
+[5.901708] (-) TimerEvent: {}
+[6.003488] (-) TimerEvent: {}
+[6.107641] (-) TimerEvent: {}
+[6.209113] (-) TimerEvent: {}
+[6.310389] (-) TimerEvent: {}
+[6.411840] (-) TimerEvent: {}
+[6.514159] (-) TimerEvent: {}
+[6.617127] (-) TimerEvent: {}
+[6.719384] (-) TimerEvent: {}
+[6.821017] (-) TimerEvent: {}
+[6.922381] (-) TimerEvent: {}
+[7.023962] (-) TimerEvent: {}
+[7.051202] (hardware) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.124227] (-) TimerEvent: {}
+[7.227127] (-) TimerEvent: {}
+[7.329579] (-) TimerEvent: {}
+[7.432005] (-) TimerEvent: {}
+[7.534777] (-) TimerEvent: {}
+[7.637085] (-) TimerEvent: {}
+[7.708232] (hardware) StdoutLine: {'line': b'-- Found hardware_interface: 2.51.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[7.737410] (-) TimerEvent: {}
+[7.838914] (-) TimerEvent: {}
+[7.940438] (-) TimerEvent: {}
+[8.042878] (-) TimerEvent: {}
+[8.144422] (-) TimerEvent: {}
+[8.245852] (-) TimerEvent: {}
+[8.348255] (-) TimerEvent: {}
+[8.450776] (-) TimerEvent: {}
+[8.554631] (-) TimerEvent: {}
+[8.658591] (-) TimerEvent: {}
+[8.761032] (-) TimerEvent: {}
+[8.863619] (-) TimerEvent: {}
+[8.965633] (-) TimerEvent: {}
+[9.067232] (-) TimerEvent: {}
+[9.169847] (-) TimerEvent: {}
+[9.272647] (-) TimerEvent: {}
+[9.375471] (-) TimerEvent: {}
+[9.477731] (-) TimerEvent: {}
+[9.579204] (-) TimerEvent: {}
+[9.681518] (-) TimerEvent: {}
+[9.782906] (-) TimerEvent: {}
+[9.885305] (-) TimerEvent: {}
+[9.987472] (-) TimerEvent: {}
+[10.088742] (-) TimerEvent: {}
+[10.191063] (-) TimerEvent: {}
+[10.292404] (-) TimerEvent: {}
+[10.393802] (-) TimerEvent: {}
+[10.495238] (-) TimerEvent: {}
+[10.596983] (-) TimerEvent: {}
+[10.664964] (hardware) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.697254] (-) TimerEvent: {}
+[10.798500] (-) TimerEvent: {}
+[10.899795] (-) TimerEvent: {}
+[11.001310] (-) TimerEvent: {}
+[11.102796] (-) TimerEvent: {}
+[11.206658] (-) TimerEvent: {}
+[11.293282] (hardware) StdoutLine: {'line': b'-- Generating done\n'}
+[11.308242] (-) TimerEvent: {}
+[11.389943] (hardware) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/ers6_ws/build/hardware\n'}
+[11.408578] (-) TimerEvent: {}
+[11.511362] (-) TimerEvent: {}
+[11.613588] (-) TimerEvent: {}
+[11.675382] (hardware) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros2_control_ers6\x1b[0m\n'}
+[11.713917] (-) TimerEvent: {}
+[11.815305] (-) TimerEvent: {}
+[11.916579] (-) TimerEvent: {}
+[11.987550] (hardware) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/ros2_control_ers6.dir/src/comms.cpp.o\x1b[0m\n'}
+[12.007444] (hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ros2_control_ers6.dir/src/actuator.cpp.o\x1b[0m\n'}
+[12.011758] (hardware) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ros2_control_ers6.dir/src/ers6_system.cpp.o\x1b[0m\n'}
+[12.015322] (hardware) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/ros2_control_ers6.dir/src/as5600_mux.cpp.o\x1b[0m\n'}
+[12.016965] (-) TimerEvent: {}
+[12.118542] (-) TimerEvent: {}
+[12.220016] (-) TimerEvent: {}
+[12.321440] (-) TimerEvent: {}
+[12.422798] (-) TimerEvent: {}
+[12.524148] (-) TimerEvent: {}
+[12.625495] (-) TimerEvent: {}
+[12.726739] (-) TimerEvent: {}
+[12.828942] (-) TimerEvent: {}
+[12.932140] (-) TimerEvent: {}
+[13.035423] (-) TimerEvent: {}
+[13.139184] (-) TimerEvent: {}
+[13.243370] (-) TimerEvent: {}
+[13.347060] (-) TimerEvent: {}
+[13.449587] (-) TimerEvent: {}
+[13.551884] (-) TimerEvent: {}
+[13.661084] (-) TimerEvent: {}
+[13.763973] (-) TimerEvent: {}
+[13.831822] (hardware) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/ros2_control_ers6.dir/src/pca9685_min.c.o\x1b[0m\n'}
+[13.864344] (-) TimerEvent: {}
+[13.967919] (-) TimerEvent: {}
+[14.071270] (-) TimerEvent: {}
+[14.174748] (-) TimerEvent: {}
+[14.278577] (-) TimerEvent: {}
+[14.383052] (-) TimerEvent: {}
+[14.487037] (-) TimerEvent: {}
+[14.590694] (-) TimerEvent: {}
+[14.692089] (-) TimerEvent: {}
+[14.794487] (-) TimerEvent: {}
+[14.895984] (-) TimerEvent: {}
+[14.997438] (-) TimerEvent: {}
+[15.098899] (-) TimerEvent: {}
+[15.200437] (-) TimerEvent: {}
+[15.304542] (-) TimerEvent: {}
+[15.406347] (-) TimerEvent: {}
+[15.508379] (-) TimerEvent: {}
+[15.609900] (-) TimerEvent: {}
+[15.711320] (-) TimerEvent: {}
+[15.812740] (-) TimerEvent: {}
+[15.914220] (-) TimerEvent: {}
+[16.017351] (-) TimerEvent: {}
+[16.119826] (-) TimerEvent: {}
+[16.221674] (-) TimerEvent: {}
+[16.324163] (-) TimerEvent: {}
+[16.427096] (-) TimerEvent: {}
+[16.528508] (-) TimerEvent: {}
+[16.630077] (-) TimerEvent: {}
+[16.731724] (-) TimerEvent: {}
+[16.834306] (-) TimerEvent: {}
+[16.941499] (-) TimerEvent: {}
+[17.042951] (-) TimerEvent: {}
+[17.144458] (-) TimerEvent: {}
+[17.246004] (-) TimerEvent: {}
+[17.347489] (-) TimerEvent: {}
+[17.449465] (-) TimerEvent: {}
+[17.550901] (-) TimerEvent: {}
+[17.652334] (-) TimerEvent: {}
+[17.753802] (-) TimerEvent: {}
+[17.856113] (-) TimerEvent: {}
+[17.961183] (-) TimerEvent: {}
+[18.064229] (-) TimerEvent: {}
+[18.165803] (-) TimerEvent: {}
+[18.267147] (-) TimerEvent: {}
+[18.369549] (-) TimerEvent: {}
+[18.471855] (-) TimerEvent: {}
+[18.573409] (-) TimerEvent: {}
+[18.674836] (-) TimerEvent: {}
+[18.776487] (-) TimerEvent: {}
+[18.879199] (-) TimerEvent: {}
+[18.982878] (-) TimerEvent: {}
+[19.085396] (-) TimerEvent: {}
+[19.189082] (-) TimerEvent: {}
+[19.290535] (-) TimerEvent: {}
+[19.392484] (-) TimerEvent: {}
+[19.496862] (-) TimerEvent: {}
+[19.598658] (-) TimerEvent: {}
+[19.700174] (-) TimerEvent: {}
+[19.804624] (-) TimerEvent: {}
+[19.907679] (-) TimerEvent: {}
+[20.010207] (-) TimerEvent: {}
+[20.112920] (-) TimerEvent: {}
+[20.215511] (-) TimerEvent: {}
+[20.319022] (-) TimerEvent: {}
+[20.420862] (-) TimerEvent: {}
+[20.522439] (-) TimerEvent: {}
+[20.624188] (-) TimerEvent: {}
+[20.725847] (-) TimerEvent: {}
+[20.827712] (-) TimerEvent: {}
+[20.929598] (-) TimerEvent: {}
+[21.032179] (-) TimerEvent: {}
+[21.134942] (-) TimerEvent: {}
+[21.236975] (-) TimerEvent: {}
+[21.338465] (-) TimerEvent: {}
+[21.439831] (-) TimerEvent: {}
+[21.541343] (-) TimerEvent: {}
+[21.642683] (-) TimerEvent: {}
+[21.744257] (-) TimerEvent: {}
+[21.847206] (-) TimerEvent: {}
+[21.950320] (-) TimerEvent: {}
+[22.051878] (-) TimerEvent: {}
+[22.153301] (-) TimerEvent: {}
+[22.255729] (-) TimerEvent: {}
+[22.358312] (-) TimerEvent: {}
+[22.459844] (-) TimerEvent: {}
+[22.561448] (-) TimerEvent: {}
+[22.662854] (-) TimerEvent: {}
+[22.764298] (-) TimerEvent: {}
+[22.865739] (-) TimerEvent: {}
+[22.967191] (-) TimerEvent: {}
+[23.068595] (-) TimerEvent: {}
+[23.169991] (-) TimerEvent: {}
+[23.271399] (-) TimerEvent: {}
+[23.372960] (-) TimerEvent: {}
+[23.475400] (-) TimerEvent: {}
+[23.576950] (-) TimerEvent: {}
+[23.678365] (-) TimerEvent: {}
+[23.779751] (-) TimerEvent: {}
+[23.881159] (-) TimerEvent: {}
+[23.982545] (-) TimerEvent: {}
+[24.083999] (-) TimerEvent: {}
+[24.185767] (-) TimerEvent: {}
+[24.287618] (-) TimerEvent: {}
+[24.389278] (-) TimerEvent: {}
+[24.490717] (-) TimerEvent: {}
+[24.592579] (-) TimerEvent: {}
+[24.694145] (-) TimerEvent: {}
+[24.796738] (-) TimerEvent: {}
+[24.898339] (-) TimerEvent: {}
+[24.999814] (-) TimerEvent: {}
+[25.101386] (-) TimerEvent: {}
+[25.202750] (-) TimerEvent: {}
+[25.304290] (-) TimerEvent: {}
+[25.405830] (-) TimerEvent: {}
+[25.507490] (-) TimerEvent: {}
+[25.608927] (-) TimerEvent: {}
+[25.710283] (-) TimerEvent: {}
+[25.811674] (-) TimerEvent: {}
+[25.913138] (-) TimerEvent: {}
+[26.014760] (-) TimerEvent: {}
+[26.116459] (-) TimerEvent: {}
+[26.217889] (-) TimerEvent: {}
+[26.319232] (-) TimerEvent: {}
+[26.420688] (-) TimerEvent: {}
+[26.522282] (-) TimerEvent: {}
+[26.623651] (-) TimerEvent: {}
+[26.725032] (-) TimerEvent: {}
+[26.826447] (-) TimerEvent: {}
+[26.927949] (-) TimerEvent: {}
+[27.029436] (-) TimerEvent: {}
+[27.130873] (-) TimerEvent: {}
+[27.232482] (-) TimerEvent: {}
+[27.333985] (-) TimerEvent: {}
+[27.435449] (-) TimerEvent: {}
+[27.537024] (-) TimerEvent: {}
+[27.638475] (-) TimerEvent: {}
+[27.739825] (-) TimerEvent: {}
+[27.841290] (-) TimerEvent: {}
+[27.942747] (-) TimerEvent: {}
+[28.044162] (-) TimerEvent: {}
+[28.146372] (-) TimerEvent: {}
+[28.247727] (-) TimerEvent: {}
+[28.350471] (-) TimerEvent: {}
+[28.451842] (-) TimerEvent: {}
+[28.553331] (-) TimerEvent: {}
+[28.654740] (-) TimerEvent: {}
+[28.756281] (-) TimerEvent: {}
+[28.857722] (-) TimerEvent: {}
+[28.959080] (-) TimerEvent: {}
+[29.060489] (-) TimerEvent: {}
+[29.162267] (-) TimerEvent: {}
+[29.263783] (-) TimerEvent: {}
+[29.365586] (-) TimerEvent: {}
+[29.467191] (-) TimerEvent: {}
+[29.569576] (-) TimerEvent: {}
+[29.670990] (-) TimerEvent: {}
+[29.772605] (-) TimerEvent: {}
+[29.874222] (-) TimerEvent: {}
+[29.975707] (-) TimerEvent: {}
+[30.077318] (-) TimerEvent: {}
+[30.178699] (-) TimerEvent: {}
+[30.280030] (-) TimerEvent: {}
+[30.381519] (-) TimerEvent: {}
+[30.482877] (-) TimerEvent: {}
+[30.584257] (-) TimerEvent: {}
+[30.685806] (-) TimerEvent: {}
+[30.787165] (-) TimerEvent: {}
+[30.888602] (-) TimerEvent: {}
+[30.990169] (-) TimerEvent: {}
+[31.091950] (-) TimerEvent: {}
+[31.193456] (-) TimerEvent: {}
+[31.294914] (-) TimerEvent: {}
+[31.396397] (-) TimerEvent: {}
+[31.498026] (-) TimerEvent: {}
+[31.599683] (-) TimerEvent: {}
+[31.701096] (-) TimerEvent: {}
+[31.802699] (-) TimerEvent: {}
+[31.904115] (-) TimerEvent: {}
+[32.006504] (-) TimerEvent: {}
+[32.107820] (-) TimerEvent: {}
+[32.209273] (-) TimerEvent: {}
+[32.310596] (-) TimerEvent: {}
+[32.411922] (-) TimerEvent: {}
+[32.513439] (-) TimerEvent: {}
+[32.617053] (-) TimerEvent: {}
+[32.718405] (-) TimerEvent: {}
+[32.819925] (-) TimerEvent: {}
+[32.921381] (-) TimerEvent: {}
+[33.022750] (-) TimerEvent: {}
+[33.124120] (-) TimerEvent: {}
+[33.225515] (-) TimerEvent: {}
+[33.326909] (-) TimerEvent: {}
+[33.428434] (-) TimerEvent: {}
+[33.529853] (-) TimerEvent: {}
+[33.631181] (-) TimerEvent: {}
+[33.732572] (-) TimerEvent: {}
+[33.834121] (-) TimerEvent: {}
+[33.936625] (-) TimerEvent: {}
+[34.038187] (-) TimerEvent: {}
+[34.140679] (-) TimerEvent: {}
+[34.242112] (-) TimerEvent: {}
+[34.343682] (-) TimerEvent: {}
+[34.445044] (-) TimerEvent: {}
+[34.546439] (-) TimerEvent: {}
+[34.648152] (-) TimerEvent: {}
+[34.749941] (-) TimerEvent: {}
+[34.851501] (-) TimerEvent: {}
+[34.953929] (-) TimerEvent: {}
+[35.055347] (-) TimerEvent: {}
+[35.158547] (-) TimerEvent: {}
+[35.260145] (-) TimerEvent: {}
+[35.361881] (-) TimerEvent: {}
+[35.463287] (-) TimerEvent: {}
+[35.564663] (-) TimerEvent: {}
+[35.666162] (-) TimerEvent: {}
+[35.767566] (-) TimerEvent: {}
+[35.869066] (-) TimerEvent: {}
+[35.970552] (-) TimerEvent: {}
+[36.072337] (-) TimerEvent: {}
+[36.174002] (-) TimerEvent: {}
+[36.275442] (-) TimerEvent: {}
+[36.377157] (-) TimerEvent: {}
+[36.479454] (-) TimerEvent: {}
+[36.580919] (-) TimerEvent: {}
+[36.682280] (-) TimerEvent: {}
+[36.783727] (-) TimerEvent: {}
+[36.885058] (-) TimerEvent: {}
+[36.986413] (-) TimerEvent: {}
+[37.087842] (-) TimerEvent: {}
+[37.189318] (-) TimerEvent: {}
+[37.290648] (-) TimerEvent: {}
+[37.392144] (-) TimerEvent: {}
+[37.493606] (-) TimerEvent: {}
+[37.595626] (-) TimerEvent: {}
+[37.697980] (-) TimerEvent: {}
+[37.799322] (-) TimerEvent: {}
+[37.900690] (-) TimerEvent: {}
+[38.002159] (-) TimerEvent: {}
+[38.103675] (-) TimerEvent: {}
+[38.205058] (-) TimerEvent: {}
+[38.306694] (-) TimerEvent: {}
+[38.408118] (-) TimerEvent: {}
+[38.509569] (-) TimerEvent: {}
+[38.611410] (-) TimerEvent: {}
+[38.712727] (-) TimerEvent: {}
+[38.814169] (-) TimerEvent: {}
+[38.915506] (-) TimerEvent: {}
+[39.016941] (-) TimerEvent: {}
+[39.118373] (-) TimerEvent: {}
+[39.219822] (-) TimerEvent: {}
+[39.321287] (-) TimerEvent: {}
+[39.422719] (-) TimerEvent: {}
+[39.524128] (-) TimerEvent: {}
+[39.625705] (-) TimerEvent: {}
+[39.727148] (-) TimerEvent: {}
+[39.828959] (-) TimerEvent: {}
+[39.931455] (-) TimerEvent: {}
+[40.032820] (-) TimerEvent: {}
+[40.134195] (-) TimerEvent: {}
+[40.235470] (-) TimerEvent: {}
+[40.336743] (-) TimerEvent: {}
+[40.438214] (-) TimerEvent: {}
+[40.539593] (-) TimerEvent: {}
+[40.641027] (-) TimerEvent: {}
+[40.742332] (-) TimerEvent: {}
+[40.843638] (-) TimerEvent: {}
+[40.945015] (-) TimerEvent: {}
+[41.051786] (-) TimerEvent: {}
+[41.153911] (-) TimerEvent: {}
+[41.255435] (-) TimerEvent: {}
+[41.348347] (hardware) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libros2_control_ers6.so\x1b[0m\n'}
+[41.355719] (-) TimerEvent: {}
+[41.457882] (-) TimerEvent: {}
+[41.559186] (-) TimerEvent: {}
+[41.660474] (-) TimerEvent: {}
+[41.761917] (-) TimerEvent: {}
+[41.864914] (-) TimerEvent: {}
+[41.966433] (-) TimerEvent: {}
+[42.070448] (-) TimerEvent: {}
+[42.172327] (-) TimerEvent: {}
+[42.275464] (-) TimerEvent: {}
+[42.378698] (-) TimerEvent: {}
+[42.483744] (-) TimerEvent: {}
+[42.585684] (-) TimerEvent: {}
+[42.689822] (-) TimerEvent: {}
+[42.791678] (-) TimerEvent: {}
+[42.895714] (-) TimerEvent: {}
+[42.998498] (-) TimerEvent: {}
+[43.100109] (-) TimerEvent: {}
+[43.201629] (-) TimerEvent: {}
+[43.303918] (-) TimerEvent: {}
+[43.408229] (-) TimerEvent: {}
+[43.511176] (-) TimerEvent: {}
+[43.615685] (-) TimerEvent: {}
+[43.633826] (hardware) StdoutLine: {'line': b'[100%] Built target ros2_control_ers6\n'}
+[43.715979] (-) TimerEvent: {}
+[43.741352] (hardware) CommandEnded: {'returncode': 0}
+[43.747605] (hardware) JobProgress: {'identifier': 'hardware', 'progress': 'install'}
+[43.751029] (hardware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/ers6_ws/build/hardware'], 'cwd': '/home/pi/ers6_ws/build/hardware', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '10.0.0.6 53768 22'), ('ROS_PACKAGE_PATH', '/home/pi/ers6_sandbox_ws/install/share'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/ers6_sandbox_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('TERM_PROGRAM_VERSION', '1.106.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e33934c2-d173-4515-ab07-463b58f5709f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ers6_sandbox_ws/install/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ers6_sandbox_ws/install/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/pi/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/pi/.vscode-server/cli/servers/Stable-ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/pi/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-1c4d3877bf4fe64f.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/pi/.vscode-server/data/User/workspaceStorage/28e4a5e175b0e1e241b463800a3e991e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-eee39d4134.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/ers6_sandbox_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/ers6_ws/build/hardware'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.6 53768 10.0.0.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/pi/ers6_sandbox_ws/install')]), 'shell': False}
+[43.816373] (-) TimerEvent: {}
+[43.846452] (hardware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.851886] (hardware) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[43.859057] (hardware) StdoutLine: {'line': b'-- Symlinking: /home/pi/ers6_ws/install/share/hardware/hardware/ers6_system_plugin.xml\n'}
+[43.916737] (-) TimerEvent: {}
+[43.955739] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/include//hardware/actuator.hpp\n'}
+[43.961444] (hardware) StdoutLine: {'line': b'-- Symlinking: /home/pi/ers6_ws/install/include//hardware/as5600_mux.hpp\n'}
+[44.017168] (-) TimerEvent: {}
+[44.058241] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/include//hardware/comms.hpp\n'}
+[44.063846] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/include//hardware/ers6_system.hpp\n'}
+[44.065440] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/include//hardware/pca9685_min.h\n'}
+[44.070799] (hardware) StdoutLine: {'line': b'-- Symlinking: /home/pi/ers6_ws/install/share/hardware/ers6_system_plugin.xml\n'}
+[44.117546] (-) TimerEvent: {}
+[44.163240] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/package_run_dependencies/hardware\n'}
+[44.166641] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/parent_prefix_path/hardware\n'}
+[44.169741] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/environment/ament_prefix_path.sh\n'}
+[44.174873] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/environment/ament_prefix_path.dsv\n'}
+[44.180350] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/environment/path.sh\n'}
+[44.185558] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/environment/path.dsv\n'}
+[44.190418] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/local_setup.bash\n'}
+[44.195185] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/local_setup.sh\n'}
+[44.199954] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/local_setup.zsh\n'}
+[44.204950] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/local_setup.dsv\n'}
+[44.209083] (hardware) StdoutLine: {'line': b'-- Symlinking: /home/pi/ers6_ws/install/share/hardware/package.dsv\n'}
+[44.217829] (-) TimerEvent: {}
+[44.306736] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/packages/hardware\n'}
+[44.313226] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware\n'}
+[44.318106] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/cmake/hardwareConfig.cmake\n'}
+[44.319495] (-) TimerEvent: {}
+[44.326655] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/cmake/hardwareConfig-version.cmake\n'}
+[44.332545] (hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/ers6_ws/install/share/hardware/package.xml\n'}
+[44.342679] (hardware) StdoutLine: {'line': b'-- Installing: /home/pi/ers6_ws/install/lib/libros2_control_ers6.so\n'}
+[44.419845] (-) TimerEvent: {}
+[44.431707] (hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/ers6_ws/install/lib/libros2_control_ers6.so" to ""\n'}
+[44.453005] (hardware) CommandEnded: {'returncode': 0}
+[44.521130] (-) TimerEvent: {}
+[44.622798] (-) TimerEvent: {}
+[44.724197] (-) TimerEvent: {}
+[44.743858] (hardware) JobEnded: {'identifier': 'hardware', 'rc': 0}
+[44.754660] (-) EventReactorShutdown: {}

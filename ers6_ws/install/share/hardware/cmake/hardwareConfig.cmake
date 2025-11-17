@@ -1,0 +1,1 @@
+/home/pi/Rasp_Buckup/ers6_ws/build/hardware/ament_cmake_core/hardwareConfig.cmake

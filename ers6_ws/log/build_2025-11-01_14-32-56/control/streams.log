@@ -1,0 +1,52 @@
+[0.226s] Invoking command in '/home/pi/ers6_ws/build/control': /usr/bin/cmake /home/pi/ers6_ws/src/control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install
+[1.092s] -- The C compiler identification is GNU 11.4.0
+[2.034s] -- The CXX compiler identification is GNU 11.4.0
+[2.166s] -- Detecting C compiler ABI info
+[3.292s] -- Detecting C compiler ABI info - done
+[3.420s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.423s] -- Detecting C compile features
+[3.427s] -- Detecting C compile features - done
+[3.472s] -- Detecting CXX compiler ABI info
+[4.757s] -- Detecting CXX compiler ABI info - done
+[4.876s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.881s] -- Detecting CXX compile features
+[4.888s] -- Detecting CXX compile features - done
+[5.010s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[7.310s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[10.229s] -- Configuring done
+[10.291s] -- Generating done
+[10.311s] [33mCMake Warning:
+[10.312s]   Manually-specified variables were not used by the project:
+[10.313s] 
+[10.322s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[10.325s]     CATKIN_SYMLINK_INSTALL
+[10.327s] 
+[10.328s] [0m
+[10.329s] -- Build files have been written to: /home/pi/ers6_ws/build/control
+[10.356s] Invoked command in '/home/pi/ers6_ws/build/control' returned '0': /usr/bin/cmake /home/pi/ers6_ws/src/control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_ws/install
+[10.370s] Invoking command in '/home/pi/ers6_ws/build/control': /usr/bin/cmake --build /home/pi/ers6_ws/build/control -- -j4 -l4
+[11.001s] Invoked command in '/home/pi/ers6_ws/build/control' returned '0': /usr/bin/cmake --build /home/pi/ers6_ws/build/control -- -j4 -l4
+[11.006s] Invoking command in '/home/pi/ers6_ws/build/control': /usr/bin/cmake --install /home/pi/ers6_ws/build/control
+[11.134s] -- Install configuration: ""
+[11.138s] -- Installing: /home/pi/ers6_ws/install/share/control/config
+[11.144s] -- Installing: /home/pi/ers6_ws/install/share/control/config/ers6_controller.yaml
+[11.148s] -- Installing: /home/pi/ers6_ws/install/share/control/config/ers6_arm_controller.params.yaml
+[11.153s] -- Installing: /home/pi/ers6_ws/install/share/control/config/ers6_trajectory_controller.yaml
+[11.154s] -- Installing: /home/pi/ers6_ws/install/share/control/control
+[11.157s] -- Installing: /home/pi/ers6_ws/install/share/control/control/control.launch.py
+[11.163s] -- Installing: /home/pi/ers6_ws/install/share/ament_index/resource_index/package_run_dependencies/control
+[11.169s] -- Installing: /home/pi/ers6_ws/install/share/ament_index/resource_index/parent_prefix_path/control
+[11.175s] -- Installing: /home/pi/ers6_ws/install/share/control/environment/ament_prefix_path.sh
+[11.180s] -- Installing: /home/pi/ers6_ws/install/share/control/environment/ament_prefix_path.dsv
+[11.186s] -- Installing: /home/pi/ers6_ws/install/share/control/environment/path.sh
+[11.191s] -- Installing: /home/pi/ers6_ws/install/share/control/environment/path.dsv
+[11.198s] -- Installing: /home/pi/ers6_ws/install/share/control/local_setup.bash
+[11.202s] -- Installing: /home/pi/ers6_ws/install/share/control/local_setup.sh
+[11.206s] -- Installing: /home/pi/ers6_ws/install/share/control/local_setup.zsh
+[11.209s] -- Installing: /home/pi/ers6_ws/install/share/control/local_setup.dsv
+[11.212s] -- Installing: /home/pi/ers6_ws/install/share/control/package.dsv
+[11.215s] -- Installing: /home/pi/ers6_ws/install/share/ament_index/resource_index/packages/control
+[11.222s] -- Installing: /home/pi/ers6_ws/install/share/control/cmake/controlConfig.cmake
+[11.226s] -- Installing: /home/pi/ers6_ws/install/share/control/cmake/controlConfig-version.cmake
+[11.229s] -- Installing: /home/pi/ers6_ws/install/share/control/package.xml
+[11.261s] Invoked command in '/home/pi/ers6_ws/build/control' returned '0': /usr/bin/cmake --install /home/pi/ers6_ws/build/control
