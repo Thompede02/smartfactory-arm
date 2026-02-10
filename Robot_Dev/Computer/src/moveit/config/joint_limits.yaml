@@ -1,0 +1,57 @@
+move_group:
+  ros__parameters:
+    robot_description_planning:
+      joint_limits:
+        Joint_1:
+          has_position_limits: true
+          min_position: -1.5708 # -90° same for the rest of the joints
+          max_position: 1.5708 #  90°
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        Joint_2:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position: 1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        Joint_3:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position: 1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        Joint_4:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position: 1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        Joint_5:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position: 1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0
+
+        Joint_6:
+          has_position_limits: true
+          min_position: -1.5708
+          max_position: 1.5708
+          has_velocity_limits: true
+          max_velocity: 2.0
+          has_acceleration_limits: false
+          max_acceleration: 0.0

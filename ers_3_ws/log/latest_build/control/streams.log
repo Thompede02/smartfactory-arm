@@ -1,0 +1,52 @@
+[0.255s] Invoking command in '/home/pi/ers6_3_ws/build/control': /usr/bin/cmake /home/pi/ers6_3_ws/src/control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_3_ws/install
+[0.995s] -- The C compiler identification is GNU 11.4.0
+[1.738s] -- The CXX compiler identification is GNU 11.4.0
+[1.828s] -- Detecting C compiler ABI info
+[2.824s] -- Detecting C compiler ABI info - done
+[2.916s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.919s] -- Detecting C compile features
+[2.923s] -- Detecting C compile features - done
+[2.972s] -- Detecting CXX compiler ABI info
+[4.167s] -- Detecting CXX compiler ABI info - done
+[4.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.315s] -- Detecting CXX compile features
+[4.322s] -- Detecting CXX compile features - done
+[4.404s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.872s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[9.432s] -- Configuring done
+[9.496s] -- Generating done
+[9.508s] [33mCMake Warning:
+[9.510s]   Manually-specified variables were not used by the project:
+[9.511s] 
+[9.513s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[9.514s]     CATKIN_SYMLINK_INSTALL
+[9.515s] 
+[9.516s] [0m
+[9.529s] -- Build files have been written to: /home/pi/ers6_3_ws/build/control
+[9.569s] Invoked command in '/home/pi/ers6_3_ws/build/control' returned '0': /usr/bin/cmake /home/pi/ers6_3_ws/src/control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pi/ers6_3_ws/install
+[9.588s] Invoking command in '/home/pi/ers6_3_ws/build/control': /usr/bin/cmake --build /home/pi/ers6_3_ws/build/control -- -j4 -l4
+[10.067s] Invoked command in '/home/pi/ers6_3_ws/build/control' returned '0': /usr/bin/cmake --build /home/pi/ers6_3_ws/build/control -- -j4 -l4
+[10.190s] Invoking command in '/home/pi/ers6_3_ws/build/control': /usr/bin/cmake --install /home/pi/ers6_3_ws/build/control
+[10.287s] -- Install configuration: ""
+[10.288s] -- Installing: /home/pi/ers6_3_ws/install/share/control/config
+[10.292s] -- Installing: /home/pi/ers6_3_ws/install/share/control/config/TrajectoryController.yaml
+[10.302s] -- Installing: /home/pi/ers6_3_ws/install/share/control/config/ers6_arm_controller.params.yaml
+[10.314s] -- Installing: /home/pi/ers6_3_ws/install/share/control/config/Controller.yaml
+[10.322s] -- Installing: /home/pi/ers6_3_ws/install/share/control/control
+[10.326s] -- Installing: /home/pi/ers6_3_ws/install/share/control/control/control.launch.py
+[10.336s] -- Installing: /home/pi/ers6_3_ws/install/share/ament_index/resource_index/package_run_dependencies/control
+[10.340s] -- Installing: /home/pi/ers6_3_ws/install/share/ament_index/resource_index/parent_prefix_path/control
+[10.345s] -- Installing: /home/pi/ers6_3_ws/install/share/control/environment/ament_prefix_path.sh
+[10.356s] -- Installing: /home/pi/ers6_3_ws/install/share/control/environment/ament_prefix_path.dsv
+[10.368s] -- Installing: /home/pi/ers6_3_ws/install/share/control/environment/path.sh
+[10.379s] -- Installing: /home/pi/ers6_3_ws/install/share/control/environment/path.dsv
+[10.387s] -- Installing: /home/pi/ers6_3_ws/install/share/control/local_setup.bash
+[10.399s] -- Installing: /home/pi/ers6_3_ws/install/share/control/local_setup.sh
+[10.409s] -- Installing: /home/pi/ers6_3_ws/install/share/control/local_setup.zsh
+[10.420s] -- Installing: /home/pi/ers6_3_ws/install/share/control/local_setup.dsv
+[10.430s] -- Installing: /home/pi/ers6_3_ws/install/share/control/package.dsv
+[10.442s] -- Installing: /home/pi/ers6_3_ws/install/share/ament_index/resource_index/packages/control
+[10.449s] -- Installing: /home/pi/ers6_3_ws/install/share/control/cmake/controlConfig.cmake
+[10.461s] -- Installing: /home/pi/ers6_3_ws/install/share/control/cmake/controlConfig-version.cmake
+[10.478s] -- Installing: /home/pi/ers6_3_ws/install/share/control/package.xml
+[10.513s] Invoked command in '/home/pi/ers6_3_ws/build/control' returned '0': /usr/bin/cmake --install /home/pi/ers6_3_ws/build/control

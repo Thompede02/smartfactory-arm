@@ -1,0 +1,54 @@
+<robot name="ers6">
+  <!-- world↔base -->
+  <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+
+  <!-- planning group -->
+  <group name="manipulator">
+    <chain base_link="base_link" tip_link="Link_6"/>
+  </group>
+
+  <!-- HOME Pose -->
+  <group_state name="HOME" group="manipulator">
+    <joint name="Joint_1" value="0"/>
+    <joint name="Joint_2" value="0"/>
+    <joint name="Joint_3" value="0"/>
+    <joint name="Joint_4" value="0"/>
+    <joint name="Joint_5" value="0"/>
+    <joint name="Joint_6" value="0"/>
+  </group_state>
+
+  <!-- READY Pose -->
+  <group_state name="READY" group="manipulator">
+    <joint name="Joint_1" value="0.0"/>
+    <joint name="Joint_2" value="-0.8"/>
+    <joint name="Joint_3" value="-0.8"/>
+    <joint name="Joint_4" value="0.3"/>
+    <joint name="Joint_5" value="0.0"/>
+    <joint name="Joint_6" value="0.0"/>
+  </group_state>
+
+
+  <!-- PICK pose -->
+  <group_state name="PICK" group="manipulator">
+    <joint name="Joint_1" value="0.0"/>
+    <joint name="Joint_2" value="-1.5708"/>
+    <joint name="Joint_3" value="0.0"/>
+    <joint name="Joint_4" value="0.0"/>
+    <joint name="Joint_5" value="0.0"/>
+    <joint name="Joint_6" value="0.0"/>
+  </group_state>
+
+  <!-- We allow contacts -->
+  <disable_collisions link1="base_link" link2="Link_1" reason="Adjacent"/>
+  <disable_collisions link1="Link_1"        link2="Link_2" reason="Adjacent"/>
+  <disable_collisions link1="Link_2"        link2="Link_3" reason="Adjacent"/>
+  <disable_collisions link1="Link_3"        link2="Link_4" reason="Adjacent"/>
+  <disable_collisions link1="Link_4"        link2="Link_5" reason="Adjacent"/>
+  <disable_collisions link1="Link_5"        link2="Link_6" reason="Adjacent"/>
+
+  <!-- Disable false positives -->
+  <!--
+  <disable_collisions link1="base_link" link2="a4" reason="Proximity"/>
+  <disable_collisions link1="a5"        link2="a3" reason="Proximity"/>
+  -->
+</robot>

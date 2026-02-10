@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<library path="ros2_control_ers6">
+  <class
+      name="ros2_control_ers6/RobotSystemHardware"
+      type="ros2_control_ers6::RobotSystemHardware"
+      base_class_type="hardware_interface::SystemInterface">
+    <description>Robot Hardware Plugin</description>
+  </class>
+</library>

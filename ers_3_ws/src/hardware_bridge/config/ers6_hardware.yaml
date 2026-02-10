@@ -1,0 +1,60 @@
+joints:
+  - name: Joint_1
+    servo_channel: 0
+    servo_sign: 1.0
+    servo_scale: 0.7
+    servo_min_us: 500
+    servo_max_us: 2500
+    joint_min_rad: -1.5708
+    joint_max_rad: 1.5708
+
+  - name: Joint_2
+    servo_channel: 1
+    servo_sign: -1.0
+    servo_scale: 0.7
+    servo_min_us: 500
+    servo_max_us: 2500
+    joint_min_rad: -1.5708
+    joint_max_rad: 1.5708
+
+  - name: Joint_3
+    servo_channel: 2
+    servo_sign: 1.0
+    servo_scale: 0.7
+    servo_min_us: 500
+    servo_max_us: 2500
+    joint_min_rad: -1.5708
+    joint_max_rad: 1.5708
+
+  - name: Joint_4
+    servo_channel: 3
+    servo_sign: 1.0
+    servo_scale: 1.0
+    servo_min_us: 500
+    servo_max_us: 2500
+    encoder_mux_channel: 0
+    encoder_zero_deg: 247.2
+    encoder_sign: 1.0
+    joint_min_rad: -1.5708
+    joint_max_rad: 1.5708
+
+  - name: Joint_5
+    servo_channel: 4
+    servo_sign: 1.0
+    servo_scale: 1.0
+    servo_min_us: 500
+    servo_max_us: 2500
+    encoder_mux_channel: 1
+    encoder_zero_deg: 274.0
+    encoder_sign: 1.0
+    joint_min_rad: -1.5708
+    joint_max_rad: 1.5708
+
+  - name: Joint_6
+    servo_channel: 5
+    servo_sign: 1.0
+    servo_scale: 1.0
+    servo_min_us: 500
+    servo_max_us: 2500
+    joint_min_rad: -1.5708
+    joint_max_rad: 1.5708

@@ -1,0 +1,4 @@
+[console_scripts]
+encoder_node = hardware_bridge.encoder_node:main
+servo_node = hardware_bridge.servo_node:main
+

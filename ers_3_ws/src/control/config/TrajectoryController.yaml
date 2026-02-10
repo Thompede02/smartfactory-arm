@@ -1,0 +1,40 @@
+TrajectoryController:
+  ros__parameters:
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6
+
+    command_interfaces: [position]
+    state_interfaces:   [position, velocity]
+
+    interpolation_method: splines
+    allow_partial_joints_goal: false
+
+    constraints:
+      goal_time: 2.0
+      stopped_velocity_tolerance: 0.1
+      Joint_1:
+        trajectory: 0.6
+        goal: 0.3
+      Joint_2:
+        trajectory: 0.6
+        goal: 0.3
+      Joint_3:
+        trajectory: 0.6
+        goal: 0.3
+      Joint_4:
+        trajectory: 0.8
+        goal: 0.5
+      Joint_5:
+        trajectory: 0.8
+        goal: 0.5
+      Joint_6:
+        trajectory: 0.8
+        goal: 0.5
+
+    state_publish_rate: 25.0
+    action_monitor_rate: 10.0

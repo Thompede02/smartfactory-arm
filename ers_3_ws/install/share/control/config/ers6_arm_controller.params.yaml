@@ -1,0 +1,9 @@
+ros__parameters:
+  joints:
+    - Joint_1
+    - Joint_2
+    - Joint_3
+    - Joint_4
+    - Joint_5
+    - Joint_6
+  interface_name: position

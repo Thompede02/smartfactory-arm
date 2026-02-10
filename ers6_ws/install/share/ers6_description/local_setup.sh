@@ -1,1 +1,0 @@
-/home/pi/Rasp_Buckup/ers6_ws/build/ers6_description/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hardware_bridge</name>
+  <version>0.0.1</version>
+  <description>Python bridge from ros2_control joint commands to PCA9685 servos.</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <!-- Pure Python package -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
