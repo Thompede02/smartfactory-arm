@@ -94,7 +94,14 @@ class ServoNode(Node):
             ticks = self.rad_to_ticks(servo_angle, min_angle, max_angle, us_min, us_max, self.period_us)
 
             channel = self.pca_channels[joint_index]
-            self.pca.channels[channel].duty_cycle = ticks << 4
+            try:
+                self.pca.channels[channel].duty_cycle = ticks << 4
+            except OSError as e:
+                # A single failed I2C write (e.g. Errno 121 from a power dip)
+                # used to crash the node and leave every servo without commands.
+                self.get_logger().warn(
+                    f"I2C write failed on channel {channel}: {e}",
+                    throttle_duration_sec=1.0)
 
 
 def main(args=None):
