@@ -3,9 +3,10 @@ project(bringup)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY launch config
-  DESTINATION share/${PROJECT_NAME}
-  OPTIONAL
-)
+foreach(dir launch config)
+  if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/${dir})
+    install(DIRECTORY ${dir} DESTINATION share/${PROJECT_NAME})
+  endif()
+endforeach()
 
 ament_package()
