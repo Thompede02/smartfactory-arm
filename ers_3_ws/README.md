@@ -66,9 +66,9 @@ This repository contains a ROS 2 Humble bringup for a **7R educational robot arm
 
 # Step A: On the Pi Source ROS + workspace:
 
-    1. $ cd ~/Rasp_Buckup/ers6_3_ws
+    1. $ cd ~/Rasp_Buckup/ers_3_ws
     2. $ source /opt/ros/humble/setup.bash
-    3. $ source ~/Rasp_Buckup/ers6_3_ws/install/setup.bash
+    3. $ source ~/Rasp_Buckup/ers_3_ws/install/setup.bash
 
 # Make sure the robot is placed around its neutral position before the launch
 
@@ -80,10 +80,10 @@ This repository contains a ROS 2 Humble bringup for a **7R educational robot arm
 
 # If errors shows we can diagnose by first re-building the system:
 
-    1. $ cd ~/Rasp_Buckup/ers6_3_ws
+    1. $ cd ~/Rasp_Buckup/ers_3_ws
     2. $ rm -rf build install log
     3. $ colcon build --merge-install --symlink-install
-    4. $ source ~/Rasp_Buckup/ers6_3_ws/install/setup.bash
+    4. $ source ~/Rasp_Buckup/ers_3_ws/install/setup.bash
     5. $ ros2 launch control control.launch.py
 
 # If stil erros show up we can clone a fresh new workspace from Github and repeat above step:
@@ -129,7 +129,7 @@ With the system running on the Pi MoveIt gives advanced control algarithm like p
 
     1. $ cd ~/Rasp_Buckup/Robot_Dev/Computer
     2. $ source /opt/ros/humble/setup.bash
-    3. $ source ~/Rasp_Buckup/Computer/install/setup.bash
+    3. $ source ~/Rasp_Buckup/Robot_Dev/Computer/install/setup.bash
 
 # Step B: Launch everything:
 
