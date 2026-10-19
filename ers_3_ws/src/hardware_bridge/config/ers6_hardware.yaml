@@ -30,13 +30,16 @@ joints:
     servo_channel: 3
     servo_sign: 1.0
     servo_scale: 1.0
-    servo_min_us: 500
-    servo_max_us: 2500
-    encoder_mux_channel: 0
-    encoder_zero_deg: 247.2
-    encoder_sign: 1.0
-    joint_min_rad: -1.5708
-    joint_max_rad: 1.5708
+    # Measured: this servo only turns ~95 deg over 500-2500 us, so the pulse
+    # range is mapped to the real joint range (0 to 0.8 rad, end stop at 0).
+    servo_min_us: 1500
+    servo_max_us: 2460
+    # The J4 encoder is on mux channel 1 (the original config had J4/J5 swapped).
+    encoder_mux_channel: 1
+    encoder_zero_deg: 256.0
+    encoder_sign: -1.0
+    joint_min_rad: 0.0
+    joint_max_rad: 0.8
 
   - name: Joint_5
     servo_channel: 4
@@ -44,9 +47,12 @@ joints:
     servo_scale: 1.0
     servo_min_us: 500
     servo_max_us: 2500
-    encoder_mux_channel: 1
-    encoder_zero_deg: 274.0
-    encoder_sign: 1.0
+    # J5 encoder is on mux channel 0. Disabled while the J5 servo is broken
+    # (stripped gears); a limp joint with an encoder makes the controller
+    # reject every trajectory on tolerance.
+    # encoder_mux_channel: 0
+    # encoder_zero_deg: 274.0  # not recalibrated for mux 0
+    # encoder_sign: 1.0
     joint_min_rad: -1.5708
     joint_max_rad: 1.5708
 
