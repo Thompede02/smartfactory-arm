@@ -73,6 +73,9 @@ class EncoderReader(Node):
             rad = deg * math.pi / 180.0  # 0 to 2π
             #Joint_Angle
             joint_angle = sign * (rad - machine_zero)
+            # Wrap to [-pi, pi) so crossing the encoder's 360 -> 0 deg point
+            # does not make the joint angle jump by a full turn.
+            joint_angle = (joint_angle + math.pi) % (2 * math.pi) - math.pi
 
             msg.name.append(name)
             msg.position.append(joint_angle)
