@@ -1,1 +1,0 @@
-rclcpp;controller_manager;joint_state_broadcaster;forward_command_controller;robot_state_publisher

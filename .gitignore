@@ -1,0 +1,12 @@
+# colcon build output
+build/
+install/
+log/
+
+# macOS metadata
+._*
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

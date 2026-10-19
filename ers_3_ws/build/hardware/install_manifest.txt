@@ -1,1 +1,0 @@
-/home/pi/ers6_3_ws/install/lib/libros2_control_ers6.so
